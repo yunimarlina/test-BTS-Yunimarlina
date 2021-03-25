@@ -1,0 +1,27 @@
+{
+  "name": "test-BTS-Yunimarlina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunimarlina/test-BTS-Yunimarlina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yunimarlina/test-BTS-Yunimarlina/issues"
+  },
+  "homepage": "https://github.com/yunimarlina/test-BTS-Yunimarlina#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.6.2"
+  }
+}
