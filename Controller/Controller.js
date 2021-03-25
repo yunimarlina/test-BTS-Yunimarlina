@@ -60,23 +60,11 @@ class Controller{
         console.log(error)
           res.status(400).json({error})
     })
-
-    // try{
-    //   let shopping = Shopping.create(newShop,{returning: true})
-    //   console.log(shopping)
-    //   res.status(200).json({data:{name: shopping.name, id:shopping.id, created: shopping.creadtedDate}})
-
-    // }
-    // catch(error){
-    //   console.log(error)
-    //   res.status(400).json(error)
-    // }
   }
 
   static async showAllShoping(req,res){
     try{
       let data = await Shopping.findAll()
-      console.log(data)
       res.status(200).json(data)
 
     }
@@ -88,7 +76,6 @@ class Controller{
   static async showDetailShoping(req,res){
     try{
       let data = await Shopping.findOne({where:{id:req.params.id}})
-      console.log(data)
       res.status(200).json(data)
 
     }
